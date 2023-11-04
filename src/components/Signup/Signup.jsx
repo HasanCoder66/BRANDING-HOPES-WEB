@@ -54,7 +54,7 @@ export default function Signup() {
           </div>
         </div>
         <div className="loginRight">
-          <div className="loginBox">
+          <div className="signupBox">
             <input
               placeholder="UserName"
               type="text"
