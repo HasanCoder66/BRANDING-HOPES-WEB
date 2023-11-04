@@ -1,0 +1,29 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-button, .signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .login-button {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .signup-button {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  
+  .login-button:hover, .signup-button:hover {
+    background-color: #2980b9;
+  }
