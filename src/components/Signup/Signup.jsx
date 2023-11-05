@@ -1,50 +1,50 @@
 import "./signup.css";
 import { Link } from "react-router-dom";
-// import React, { useRef } from "react";
-// import { getAuth, createUserWithEmailAndPassword } from "../../firebase/config";
-// import { useNavigate } from "react-router-dom";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import React, { useRef } from "react";
+import { getAuth, createUserWithEmailAndPassword } from "../../firebase/config";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Signup() {
-//   const auth = getAuth();
-// const navigate = useNavigate()
-//   const userName = useRef();
-//   const email = useRef();
-//   const password = useRef();
-//   const cPassword = useRef();
+  const auth = getAuth();
+const navigate = useNavigate()
+  const userName = useRef();
+  const email = useRef();
+  const password = useRef();
+  const cPassword = useRef();
 
-//   const signupHandler = () => {
-//     console.log("signup handler is working");
-//     createUserWithEmailAndPassword(
-//       auth,
-//       email?.current?.value,
-//       password?.current?.value
-//     )
-//       .then((userCredential) => {
-//         // Signed up
-//         const user = userCredential.user;
-//         console.log(user);
+  const signupHandler = () => {
+    console.log("signup handler is working");
+    createUserWithEmailAndPassword(
+      auth,
+      email?.current?.value,
+      password?.current?.value
+    )
+      .then((userCredential) => {
+        // Signed up
+        const user = userCredential.user;
+        console.log(user);
 
-//         if (user) {
-//           toast.success("user signup successfully");
-//           setTimeout(() => {
-//             navigate("/login");
-//           }, 5000);
+        if (user) {
+          toast.success("user signup successfully");
+          setTimeout(() => {
+            navigate("/login");
+          }, 5000);
         
-//         } else {
-//           toast.failed("user not registered");
-//         }
-//         // ...
-//       })
-//       .catch((error) => {
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//         console.log(errorCode);
-//         console.log(errorMessage);
-//         // ..
-//       });
-//   };
+        } else {
+          toast.failed("user not registered");
+        }
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode);
+        console.log(errorMessage);
+        // ..
+      });
+  };
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -59,29 +59,29 @@ export default function Signup() {
               placeholder="UserName"
               type="text"
               className="loginInput"
-            //   ref={userName}
+              ref={userName}
             />
             <input
               placeholder="Email Address"
               type="email"
               className="loginInput"
-            //   ref={email}
+              ref={email}
             />
             <input
               placeholder=" Password"
               type="password"
               className="loginInput"
-            //   ref={password}
+              ref={password}
             />
             <input
               placeholder="Confirm Password "
               type="password"
               className="loginInput"
-            //   ref={cPassword}
+              ref={cPassword}
             />
 
-            {/* onClick={signupHandler} */}
-            <button className="loginButton" >
+            
+            <button className="loginButton" onClick={signupHandler}>
               {" "}
               Sign Up
             </button>
@@ -93,7 +93,7 @@ export default function Signup() {
           </div>
         </div>
       </div>
-      {/* <ToastContainer /> */}
+      <ToastContainer />
     </div>
   );
 }
