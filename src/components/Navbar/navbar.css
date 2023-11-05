@@ -5,6 +5,8 @@
     text-decoration: none;
 }
 .navbar {
+  /* box-shadow: rgba(100, 100, 100, 0.45) 0px 25p x 20px -20px; */
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
     background-color: white;
     color: #fff;
     display: flex;
@@ -12,8 +14,15 @@
     align-items: center;
     padding: 10px 20px;
   }
+.navbar:hover {
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25p x 20px -20px; */
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    background-color: black;
+   
+  }
   
   .logo img{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     width: 80px;
     border-radius: 25%;
   }

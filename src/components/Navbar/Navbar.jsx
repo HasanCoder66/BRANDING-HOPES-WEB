@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import Button from "../Button";
 function Navbar() {
   return (
-    <div className="navbar">
+    <div className="navbar navbar shadow sticky z-50 top-0 bg-white border-gray-200 px-4 lg:px-6 py-2.5">
       <div className="logo">
         {" "}
         <img
