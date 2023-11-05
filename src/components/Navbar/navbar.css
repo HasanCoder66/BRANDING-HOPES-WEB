@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 .navbar {
-    background-color: #bd8585;
+    background-color: white;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -32,13 +32,14 @@
   .nav-links a {
     text-decoration: none;
     /* color: black; */
-    color: white;
+    color: #484848;
     font-weight: bold;
     padding: 15px;
   }
   
   .nav-links a:hover {
-    color: yellow;
+    color: #e64c3c;
+    border-bottom: 12px #484848;
   }
   
 /* button css */

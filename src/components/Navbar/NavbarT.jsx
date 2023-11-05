@@ -7,7 +7,7 @@ function Navbar() {
       <div className="logo">
         {" "}
         <img
-          src="https://scontent.fkhi4-2.fna.fbcdn.net/v/t39.30808-6/398660730_122101832408097808_826848894669553659_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGrelL9W6J_b9xYgU3COfTN0hp7JW5DNXvSGnslbkM1e8YW5XioFmQubbZ709Jp0k8PRfsGpU4DvlaRLWytxRUT&_nc_ohc=u5jwRQCQKIYAX8Nu6tl&_nc_zt=23&_nc_ht=scontent.fkhi4-2.fna&oh=00_AfBOT6N9bGpmSEj3ADMoHKndffkjr6QNaj5Ox9wbll77YQ&oe=654C2319"
+          src="../../src/assets/BH_Logo_AI-01.png"
           alt="Branding-Hopes "
         />
       </div>
