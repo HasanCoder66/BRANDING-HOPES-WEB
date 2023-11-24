@@ -2,18 +2,15 @@ import React from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 // import Button from "../Button";
-function Navbar() {
+function Navbar({ type }) {
   return (
     <div className="navbar navbar shadow sticky z-50 top-0 bg-white border-gray-200 px-4 lg:px-6 py-2.5">
       <div className="logo">
         {" "}
-        <img
-          src="../../src/assets/BH_Logo_AI-01.png"
-          alt="Branding-Hopes "
-        />
+        <img src="../../src/assets/BH_Logo_AI-01.png" alt="Branding-Hopes " />
       </div>
       <ul className="nav-links">
-        <Link >
+        <Link>
           <li>
             <a>Home</a>
           </li>
@@ -40,14 +37,18 @@ function Navbar() {
           </li>
         </Link>
       </ul>
+      {type !== "about" ? (
         <div class="button-container">
-          <Link to='/login'>
-          <button class="login-button">Login</button>
+          <Link to="/login">
+            <button class="login-button">Login</button>
           </Link>
-         <Link to='/signup'>
-         <button class="signup-button">Signup</button>
-         </Link>
+          <Link to="/signup">
+            <button class="signup-button">Signup</button>
+          </Link>
         </div>
+      ) : (
+        " "
+      )}
     </div>
   );
 }
