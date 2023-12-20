@@ -4,7 +4,7 @@ import NavbarT from '../Navbar/NavbarT'
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
-function About() {
+function About({type}) {
   return (
     <>
       <Navbar type={"about"}/>
@@ -14,7 +14,7 @@ function About() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
                         <img
-                            src="https://scontent.fkhi4-4.fna.fbcdn.net/v/t39.30808-6/396711268_122098779596097808_366837254929771693_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEFxCvMxvhr2tRngsRaV30oEfPTj3pZx1wR89OPelnHXGYLhxHHsC0x_M7vn6aw823N_uhFam-GxbhajkUmZTKF&_nc_ohc=k2lKObwsH6YAX8t4C42&_nc_zt=23&_nc_ht=scontent.fkhi4-4.fna&oh=00_AfDN3N7gKoeiRWbrDbErHlSp64IMWDMleak4YzUN1WKVMQ&oe=654C3A5E"
+                            src="https://scontent.fkhi4-4.fna.fbcdn.net/v/t39.30808-6/396711268_122098779596097808_366837254929771693_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeEFxCvMxvhr2tRngsRaV30oEfPTj3pZx1wR89OPelnHXGYLhxHHsC0x_M7vn6aw823N_uhFam-GxbhajkUmZTKF&_nc_ohc=QhTIsBSh-P4AX8X_DDR&_nc_zt=23&_nc_ht=scontent.fkhi4-4.fna&oh=00_AfD0ppntWKWMevrqqXf9m4WKSqcFIMQIQMkoChtTwTvp8A&oe=65878DDE"
                             alt="image"
                         />
                     </div>
@@ -57,7 +57,7 @@ function About() {
                     </div>
                     <div className="md:5/12 lg:w-5/12">
                         <img
-                            src="https://scontent.fkhi4-4.fna.fbcdn.net/v/t39.30808-6/396711268_122098779596097808_366837254929771693_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEFxCvMxvhr2tRngsRaV30oEfPTj3pZx1wR89OPelnHXGYLhxHHsC0x_M7vn6aw823N_uhFam-GxbhajkUmZTKF&_nc_ohc=k2lKObwsH6YAX8t4C42&_nc_zt=23&_nc_ht=scontent.fkhi4-4.fna&oh=00_AfDN3N7gKoeiRWbrDbErHlSp64IMWDMleak4YzUN1WKVMQ&oe=654C3A5E"
+                            src="https://scontent.fkhi4-4.fna.fbcdn.net/v/t39.30808-6/396711268_122098779596097808_366837254929771693_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeEFxCvMxvhr2tRngsRaV30oEfPTj3pZx1wR89OPelnHXGYLhxHHsC0x_M7vn6aw823N_uhFam-GxbhajkUmZTKF&_nc_ohc=QhTIsBSh-P4AX8X_DDR&_nc_zt=23&_nc_ht=scontent.fkhi4-4.fna&oh=00_AfD0ppntWKWMevrqqXf9m4WKSqcFIMQIQMkoChtTwTvp8A&oe=65878DDE"
                             alt="image"
                         />
                     </div>
